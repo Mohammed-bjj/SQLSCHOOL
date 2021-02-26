@@ -1,0 +1,43 @@
+[ 
+			{
+				"id" : 1,
+				"question" : "Afficher tout les colonnes de la table Movie ?",
+				"reponses" :   ["select * from t;", "select mID , title , year , director from t;"],
+				"scriptAfter": [ {
+				                    "id" : 1,
+				                    "test" : "  " ,
+				                    "discription" : ""  
+				                 }	
+				               ],
+				"scriptBefor": []
+			},
+			{
+				"id" : 2		 ,
+				"question" : " insère un nouvel enregistrement dans la table Reviewer?",
+				"reponses" :   ["insert into Reviewer values(201, 'Sarah Martinez');", 
+								"insert into Reviewer(rid,test) values(201, 'Sarah Martinez');"],
+				"scriptAfter": [],
+				"scriptBefore": []
+			},
+			{
+				"id" : 3,   
+				"question" : " Mis à jour l'année de la table film en (2021) pour tout l'enregistrements où le titre du film  est ( Star Wars ) ?", 
+				"reponses" :   ["UPDATE movie SET year= 2021 WHERE title = 'Star Wars';"],
+				"scriptAfter": [],
+				"scriptBefore": []
+			},
+			
+			
+			{
+				"id" : 4,   
+				"question" : " Supprimer toute les filmes realisé en 2009 ? ", 
+				"reponses" :   ["DELETE FROM movie WHERE year= 2009;"],
+				"scriptAfter": [],
+				"scriptBefore": []
+			}
+			
+			
+			
+			
+			
+]
